@@ -1,0 +1,2977 @@
+{
+  "timestamp_utc": "2026-10-21T22:51:22.341567+00:00",
+  "status": "PASS_EXACT_MODEL_IDENTITY",
+  "original_model": "/mnt/c/Users/qiaoy/PycharmProjects/Silicon_Baseline/VO2_Train/Results_VO2_SPEAKER_ALL15_PAPER_ASIC_V2/spk/d/pflmh_gan_r0-0-0-0/s000/model.npz",
+  "original_model_sha256": "7bca9b24afe93807a726cb96d1c7a5bffc7c23ad7adf37c6651e1a2c4664f7c3",
+  "handoff": "/mnt/c/Users/qiaoy/PycharmProjects/Silicon_Baseline/VO2_Train/Results_VO2_SPEAKER_ALL15_PAPER_ASIC_V2/ASIC_PREP/SPLIT1_R0_R1_SPARSE_ASIC/r0_PRIMARY/14_SHIFT2_SPARSE_ASIC_HANDOFF.npz",
+  "handoff_sha256": "3f1c5d9f22d5d4c42e60fada01079cbe0530569469d0dfb1713e2b322465d574",
+  "training_run": "Results_VO2_SPEAKER_ALL15_PAPER_ASIC_V2/spk/d/pflmh_gan_r0-0-0-0/s000",
+  "shuffle_id_zero_based": 0,
+  "publication_split_one_based": 1,
+  "split_seed": 42,
+  "split_selected_trial": 12125,
+  "speaker_counts": [
+    35,
+    8,
+    7
+  ],
+  "sample_counts": [
+    718,
+    153,
+    152
+  ],
+  "speaker_sets": {
+    "train_speakers": [
+      "AJJ",
+      "ALE",
+      "ASI",
+      "CAT",
+      "CCH",
+      "CHR",
+      "CJM",
+      "COM",
+      "GAS",
+      "GEP",
+      "GJR",
+      "HNR",
+      "ILI",
+      "JES",
+      "JJO",
+      "JON",
+      "KHJ",
+      "KKS",
+      "KWM",
+      "KYJ",
+      "LIS",
+      "LJA",
+      "LJI",
+      "LSJ",
+      "LSO",
+      "LSS",
+      "NAT",
+      "PIT",
+      "PKH",
+      "SAM",
+      "SEH",
+      "SHI",
+      "SOL",
+      "STF",
+      "SUJ"
+    ],
+    "val_speakers": [
+      "ASH",
+      "CAS",
+      "CPT",
+      "DYL",
+      "KSK",
+      "KUW",
+      "NIC",
+      "TAB"
+    ],
+    "test_speakers": [
+      "CHA",
+      "CLA",
+      "HIL",
+      "JEF",
+      "JYJ",
+      "NOB",
+      "PHS"
+    ]
+  },
+  "repeat": "r0 on all four paths; independent repeat-specific fit, not averaged weights",
+  "C": 3.5e-05,
+  "C_search_verification": {
+    "status": "PASS",
+    "candidates": 28,
+    "selected_C": 3.5e-05,
+    "selected_shift2_validation": 0.9738562091503268,
+    "test_metrics_in_candidate_records": false,
+    "source": "original model.npz:target_class_weight_search_records"
+  },
+  "selection_priority": "shift2_first",
+  "validation_correct": 149,
+  "validation_total": 153,
+  "validation_percent": 97.38562091503267,
+  "test_correct": 138,
+  "test_total": 152,
+  "test_percent": 90.78947368421052,
+  "experiment_signature": "806b62df7a42cdaefc21fa76a731ae1280f468ed83f110efa70d65b19812f33e",
+  "class_names": [
+    "hey_android",
+    "hey_snapdragon",
+    "hi_galaxy",
+    "hi_lumina",
+    "noise",
+    "unknown"
+  ],
+  "group_scales": [
+    {
+      "group_id": 0,
+      "name": "full_and_edge",
+      "float32_decimal": "1.0",
+      "float32_hex": "3f800000",
+      "Q60_integer": 1152921504606846976,
+      "active_rows": 0
+    },
+    {
+      "group_id": 1,
+      "name": "full_and_high",
+      "float32_decimal": "1.0",
+      "float32_hex": "3f800000",
+      "Q60_integer": 1152921504606846976,
+      "active_rows": 0
+    },
+    {
+      "group_id": 2,
+      "name": "full_nor_edge",
+      "float32_decimal": "9.999999974752427e-07",
+      "float32_hex": "358637bd",
+      "Q60_integer": 1152921501696,
+      "active_rows": 2
+    },
+    {
+      "group_id": 3,
+      "name": "full_nor_high",
+      "float32_decimal": "4.999999873689376e-06",
+      "float32_hex": "36a7c5ac",
+      "Q60_integer": 5764607377408,
+      "active_rows": 12
+    },
+    {
+      "group_id": 4,
+      "name": "low_and_edge",
+      "float32_decimal": "1.0",
+      "float32_hex": "3f800000",
+      "Q60_integer": 1152921504606846976,
+      "active_rows": 0
+    },
+    {
+      "group_id": 5,
+      "name": "low_and_high",
+      "float32_decimal": "1.0",
+      "float32_hex": "3f800000",
+      "Q60_integer": 1152921504606846976,
+      "active_rows": 0
+    },
+    {
+      "group_id": 6,
+      "name": "low_nor_edge",
+      "float32_decimal": "1.9999999949504854e-06",
+      "float32_hex": "360637bd",
+      "Q60_integer": 2305843003392,
+      "active_rows": 4
+    },
+    {
+      "group_id": 7,
+      "name": "low_nor_high",
+      "float32_decimal": "4.999999873689376e-06",
+      "float32_hex": "36a7c5ac",
+      "Q60_integer": 5764607377408,
+      "active_rows": 14
+    },
+    {
+      "group_id": 8,
+      "name": "mid_and_edge",
+      "float32_decimal": "9.999999747378752e-06",
+      "float32_hex": "3727c5ac",
+      "Q60_integer": 11529214754816,
+      "active_rows": 5
+    },
+    {
+      "group_id": 9,
+      "name": "mid_and_high",
+      "float32_decimal": "1.0",
+      "float32_hex": "3f800000",
+      "Q60_integer": 1152921504606846976,
+      "active_rows": 0
+    },
+    {
+      "group_id": 10,
+      "name": "mid_nor_edge",
+      "float32_decimal": "1.9999999949504854e-06",
+      "float32_hex": "360637bd",
+      "Q60_integer": 2305843003392,
+      "active_rows": 2
+    },
+    {
+      "group_id": 11,
+      "name": "mid_nor_high",
+      "float32_decimal": "4.999999873689376e-06",
+      "float32_hex": "36a7c5ac",
+      "Q60_integer": 5764607377408,
+      "active_rows": 24
+    },
+    {
+      "group_id": 12,
+      "name": "high_and_edge",
+      "float32_decimal": "1.9999999949504854e-06",
+      "float32_hex": "360637bd",
+      "Q60_integer": 2305843003392,
+      "active_rows": 4
+    },
+    {
+      "group_id": 13,
+      "name": "high_and_high",
+      "float32_decimal": "1.0",
+      "float32_hex": "3f800000",
+      "Q60_integer": 1152921504606846976,
+      "active_rows": 0
+    },
+    {
+      "group_id": 14,
+      "name": "high_nor_edge",
+      "float32_decimal": "1.9999999494757503e-05",
+      "float32_hex": "37a7c5ac",
+      "Q60_integer": 23058429509632,
+      "active_rows": 1
+    },
+    {
+      "group_id": 15,
+      "name": "high_nor_high",
+      "float32_decimal": "9.999999747378752e-06",
+      "float32_hex": "3727c5ac",
+      "Q60_integer": 11529214754816,
+      "active_rows": 23
+    }
+  ],
+  "biases_Q60": [
+    -2179350016,
+    -118546352,
+    -3107249920,
+    -5723203584,
+    1762935424,
+    9365413888
+  ],
+  "rom_payload_encoding": "91 ascending physical ROM addresses, each unsigned40-bit big-endian5bytes (group[39:36], class c at [6c+5:6c])",
+  "rom_payload_SHA256": "bea1c20eae7b0ac2abb32271b2ac103b9880539ef08c56612973e47d9b72c3ea",
+  "coefficients_encoding": "6x480 signed int32 little-endian C-order class-major",
+  "coefficients_SHA256": "9213750655b00cec5fab5ccbfae80a7b00d6893ce211b517fbbe25059e3da68d",
+  "weight_mem_file_SHA256": "68fee7d6573eb9c26bafa7105d9e405c7af0ff70d66ad269bf7c142c8224eff6",
+  "rom_source_SHA256": "ddae5b2b973c717d805dccbb7cfc3b532306f9228923d1432067a50ed4516fe6",
+  "implementations": {
+    "SKY130_200KHZ_CSA_FINAL": {
+      "rom_sha256": "ddae5b2b973c717d805dccbb7cfc3b532306f9228923d1432067a50ed4516fe6",
+      "rtl_sha256": "8767914d4ad2cfb5536ca0cbbb4baeccee03bc56db64676696fca2d1b87740d3",
+      "ROM_words_match": 91,
+      "metadata_match": 91,
+      "coefficient_match": 16,
+      "bias_match": 6
+    },
+    "ASAP7_200KHZ_CSA_FINAL": {
+      "rom_sha256": "ddae5b2b973c717d805dccbb7cfc3b532306f9228923d1432067a50ed4516fe6",
+      "rtl_sha256": "6a79ec46933a5d43b4343e95b1a739b3762befd7a0c88537b57036474d036062",
+      "ROM_words_match": 91,
+      "metadata_match": 91,
+      "coefficient_match": 16,
+      "bias_match": 6
+    },
+    "SKY130_FINAL_GATE_EVIDENCE": {
+      "path": "SKY130_200KHZ_CSA_FINAL/POWER/canonical_sample0/simulation.log",
+      "sha256": "e60638bc6492f0b6622a869e527032f86f5fac5e2ec04ef2816b4b43126062a2",
+      "scores_observed": 912,
+      "exact_matches": 912
+    },
+    "ASAP7_FINAL_GATE_EVIDENCE": {
+      "path": "ASAP7_200KHZ_CSA_FINAL/FUNCTIONAL/REGRESSIONS/final/phase_3_backend_0_startup_100_width_100000_held_settled/simulation.log",
+      "sha256": "e39f2f2c2db772eefca601e44aad32b7c565568fdaeb63ce9065460dba7cfab7",
+      "scores_observed": 912,
+      "exact_matches": 912
+    }
+  },
+  "checks": [
+    {
+      "check": "original matches recorded SHA256",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "SKY130_200KHZ_CSA_FINAL archived original_training/model.npz",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "SKY130_200KHZ_CSA_FINAL archived asic_handoff/14_SHIFT2_SPARSE_ASIC_HANDOFF.npz",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "ASAP7_200KHZ_CSA_FINAL archived original_training/model.npz",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "ASAP7_200KHZ_CSA_FINAL archived asic_handoff/14_SHIFT2_SPARSE_ASIC_HANDOFF.npz",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "original vs handoff Q_shift2_int",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "original vs handoff shift2_terms",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "original vs handoff selected_indices",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "original vs handoff selected_group_ids",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "original vs handoff shift2_group_scales",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "original vs handoff b_shift2_float",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "480 AND+NOR r0 raw positions",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 0 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 5 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 6 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 7 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 8 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 12 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 13 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 14 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 15 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 19 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 20 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 21 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 22 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 26 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 27 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 28 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 29 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 33 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 34 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 35 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 36 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 40 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 41 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 42 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 43 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 47 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 48 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 49 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 50 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 54 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 55 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 56 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 57 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 61 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 62 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 63 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 64 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 68 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 69 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 70 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 71 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 75 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 76 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 77 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 78 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 82 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 83 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 84 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 85 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 89 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 90 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 91 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 92 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 96 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 97 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 98 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 99 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 103 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 104 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 105 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 106 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 110 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 111 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 112 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 113 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 117 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 118 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 119 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 120 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 124 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 125 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 126 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 127 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 131 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 132 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 133 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 134 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 138 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 139 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 140 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 141 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 145 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 146 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 147 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 148 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 152 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 153 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 154 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 155 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 159 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 160 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 161 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 162 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 166 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 167 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 168 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 169 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 173 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 174 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 175 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 176 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 180 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 181 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 182 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 183 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 187 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 188 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 189 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 190 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 194 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 195 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 196 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 197 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 201 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 202 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 203 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 204 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 208 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 209 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 630 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 631 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 635 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 636 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 637 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 638 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 642 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 643 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 644 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 645 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 649 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 650 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 651 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 652 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 656 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 657 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 658 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 659 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 663 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 664 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 665 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 666 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 670 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 671 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 672 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 673 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 677 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 678 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 679 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 680 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 684 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 685 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 686 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 687 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 691 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 692 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 693 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 694 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 698 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 699 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 700 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 701 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 705 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 706 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 707 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 708 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 712 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 713 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 714 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 715 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 719 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 720 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 721 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 722 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 726 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 727 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 728 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 729 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 733 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 734 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 735 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 736 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 740 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 741 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 742 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 743 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 747 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 748 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 749 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 750 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 754 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 755 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 756 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 757 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 761 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 762 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 763 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 764 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 768 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 769 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 770 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 771 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 775 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 776 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 777 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 778 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 782 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 783 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 784 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 785 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 789 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 790 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 791 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 792 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 796 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 797 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 798 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 799 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 803 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 804 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 805 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 806 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 810 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 811 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 812 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 813 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 817 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 818 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 819 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 820 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 824 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 825 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 826 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 827 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 831 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 832 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 833 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 834 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 838 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 839 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1260 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1261 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1265 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1266 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1267 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1268 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1272 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1273 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1274 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1275 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1279 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1280 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1281 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1282 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1286 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1287 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1288 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1289 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1293 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1294 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1295 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1296 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1300 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1301 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1302 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1303 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1307 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1308 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1309 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1310 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1314 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1315 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1316 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1317 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1321 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1322 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1323 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1324 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1328 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1329 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1330 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1331 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1335 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1336 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1337 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1338 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1342 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1343 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1344 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1345 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1349 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1350 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1351 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1352 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1356 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1357 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1358 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1359 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1363 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1364 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1365 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1366 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1370 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1371 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1372 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1373 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1377 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1378 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1379 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1380 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1384 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1385 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1386 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1387 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1391 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1392 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1393 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1394 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1398 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1399 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1400 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1401 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1405 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1406 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1407 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1408 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1412 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1413 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1414 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1415 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1419 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1420 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1421 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1422 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1426 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1427 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1428 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1429 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1433 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1434 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1435 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1436 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1440 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1441 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1442 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1443 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1447 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1448 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1449 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1450 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1454 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1455 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1456 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1457 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1461 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1462 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1463 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1464 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1468 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1469 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1890 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1891 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1895 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1896 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1897 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1898 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1902 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1903 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1904 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1905 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1909 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1910 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1911 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1912 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1916 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1917 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1918 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1919 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1923 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1924 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1925 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1926 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1930 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1931 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1932 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1933 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1937 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1938 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1939 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1940 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1944 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1945 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1946 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1947 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1951 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1952 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1953 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1954 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1958 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1959 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1960 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1961 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1965 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1966 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1967 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1968 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1972 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1973 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1974 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1975 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1979 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1980 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1981 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1982 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1986 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1987 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1988 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1989 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1993 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1994 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1995 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 1996 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2000 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2001 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2002 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2003 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2007 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2008 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2009 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2010 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2014 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2015 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2016 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2017 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2021 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2022 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2023 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2024 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2028 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2029 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2030 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2031 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2035 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2036 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2037 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2038 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2042 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2043 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2044 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2045 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2049 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2050 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2051 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2052 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2056 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2057 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2058 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2059 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2063 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2064 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2065 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2066 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2070 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2071 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2072 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2073 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2077 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2078 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2079 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2080 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2084 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2085 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2086 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2087 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2091 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2092 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2093 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2094 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2098 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature 2099 format",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "feature scales index Shift2 group scales",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "91 active /389 skipped /143 nonzero",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "active handoff mapping",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "SKY130_200KHZ_CSA_FINAL all91 ROM words",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "SKY130_200KHZ_CSA_FINAL unused ROM addresses default zero",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "SKY130_200KHZ_CSA_FINAL source index and group flush metadata",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "SKY130_200KHZ_CSA_FINAL exact Q60 biases",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "SKY130_200KHZ_CSA_FINAL family0 complement correction",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "SKY130_200KHZ_CSA_FINAL family1 complement correction",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "SKY130_200KHZ_CSA_FINAL constant families",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "SKY130_200KHZ_CSA_FINAL all16 exact Q60 scales",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "SKY130_200KHZ_CSA_FINAL archived SRAM-format image",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "ASAP7_200KHZ_CSA_FINAL all91 ROM words",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "ASAP7_200KHZ_CSA_FINAL unused ROM addresses default zero",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "ASAP7_200KHZ_CSA_FINAL source index and group flush metadata",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "ASAP7_200KHZ_CSA_FINAL exact Q60 biases",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "ASAP7_200KHZ_CSA_FINAL family0 complement correction",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "ASAP7_200KHZ_CSA_FINAL family1 complement correction",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "ASAP7_200KHZ_CSA_FINAL constant families",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "ASAP7_200KHZ_CSA_FINAL all16 exact Q60 scales",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "ASAP7_200KHZ_CSA_FINAL archived SRAM-format image",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "same technology-independent fixed ROM bytes",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "same ASAP/SKY test feature memory",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "912 recomputed exact integer Q60 reference scores",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "152 model Shift2 predictions",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "cached train/val/test indices identify exact split",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "pairwise real-speaker disjoint",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw feature dataset hash matches training config",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "all test features exact raw-selected slice",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "test labels exact checkpoint labels",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "independently recomputed Shift2 validation accuracy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "independently recomputed held-out test accuracy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "original NPZ28-candidate validation ranking selects recorded C",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "no test outcome in C candidate records",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "SKY130 final post-route912scores directly equal original NPZ recomputation",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "ASAP7 final post-route912scores directly equal original NPZ recomputation",
+      "status": "PASS",
+      "detail": ""
+    }
+  ],
+  "evidence": [
+    {
+      "source": "/mnt/c/Users/qiaoy/PycharmProjects/Silicon_Baseline/VO2_Train/Results_VO2_SPEAKER_ALL15_PAPER_ASIC_V2/TRAINING_RESUME_CACHE/spk/pflmh_gan_r0-0-0-0/s000.json",
+      "copy": "FINAL_ASIC_MODEL_PROVENANCE/SOURCE_EVIDENCE/s000.json",
+      "sha256": "beaf049346da75dafba01d085ab2a724196c99a4362aa3b230385090abdf5b63"
+    },
+    {
+      "source": "/mnt/c/Users/qiaoy/PycharmProjects/Silicon_Baseline/VO2_Train/EXPORT_AND_NOR_SPLIT1_R0_R1_SPARSE_ASIC.py",
+      "copy": "FINAL_ASIC_MODEL_PROVENANCE/SOURCE_EVIDENCE/EXPORT_AND_NOR_SPLIT1_R0_R1_SPARSE_ASIC.py",
+      "sha256": "c65e517d41f500e7279923137d63ab38629895f6f3fa383212073f5b72fc584c"
+    },
+    {
+      "source": "/mnt/c/Users/qiaoy/PycharmProjects/Silicon_Baseline/VO2_Train/Results_VO2_SPEAKER_ALL15_PAPER_ASIC_V2/SPEAKER_ALL15_ANALYSIS/03_each_repeat_450_fits.csv",
+      "copy": "FINAL_ASIC_MODEL_PROVENANCE/SOURCE_EVIDENCE/03_each_repeat_450_fits.csv",
+      "sha256": "e8d996d0705b192bad190d55bec27a6b200564e42d8a09d9b1aaea27900d0536"
+    },
+    {
+      "source": "/mnt/c/Users/qiaoy/PycharmProjects/Silicon_Baseline/VO2_Train/Results_VO2_SPEAKER_ALL15_PAPER_ASIC_V2/PAPER_READY/SHIFT2_VALIDATION_RANKING.csv",
+      "copy": "FINAL_ASIC_MODEL_PROVENANCE/SOURCE_EVIDENCE/SHIFT2_VALIDATION_RANKING.csv",
+      "sha256": "164274279a3ebc8ecddd0c7b0459a13f7093ce59b1bcd1d714e6f8b808484edc"
+    },
+    {
+      "source": "/mnt/c/Users/qiaoy/PycharmProjects/Silicon_Baseline/VO2_Train/Results_VO2_SPEAKER_ALL15_PAPER_ASIC_V2/ASIC_PREP/SPLIT1_R0_R1_SPARSE_ASIC/README_HARDWARE_INTEGRATION.txt",
+      "copy": "FINAL_ASIC_MODEL_PROVENANCE/SOURCE_EVIDENCE/README_HARDWARE_INTEGRATION.txt",
+      "sha256": "2b49f45043a6eff2973595ebde780ad725cf29c4e4a3370047109dead6295eb6"
+    },
+    {
+      "source": "/mnt/c/Users/qiaoy/PycharmProjects/Silicon_Baseline/VO2_Train/Results_VO2_SPEAKER_ALL15_PAPER_ASIC_V2/ASIC_PREP/SPLIT1_R0_R1_SPARSE_ASIC/00_R0_VS_R1_COMPARISON.csv",
+      "copy": "FINAL_ASIC_MODEL_PROVENANCE/SOURCE_EVIDENCE/00_R0_VS_R1_COMPARISON.csv",
+      "sha256": "4d6cbc31aa888c0107360619cf1d1485ce501f89b8bce2ba0cf7ea284b7ceab4"
+    },
+    {
+      "source": "/home/yqiao19/OpenROAD-flow-scripts/flow/SKY130_200KHZ_CSA_FINAL/MODEL/model_provenance/original_training/summary.json",
+      "copy": "FINAL_ASIC_MODEL_PROVENANCE/SOURCE_EVIDENCE/summary.json",
+      "sha256": "d64f99ebcc917e39f84d9af0f575eb596364a8860ca74afd6c6b3395916a5b5f"
+    },
+    {
+      "source": "/home/yqiao19/OpenROAD-flow-scripts/flow/SKY130_200KHZ_CSA_FINAL/MODEL/model_provenance/original_training/analysis_config.json",
+      "copy": "FINAL_ASIC_MODEL_PROVENANCE/SOURCE_EVIDENCE/analysis_config.json",
+      "sha256": "cf0b03a61774644be43d4f16c3361b528af2cda556d8a23cc92495e18cc3d1e9"
+    },
+    {
+      "source": "/home/yqiao19/OpenROAD-flow-scripts/flow/SKY130_200KHZ_CSA_FINAL/MODEL/model_provenance/original_training/training_source.py",
+      "copy": "FINAL_ASIC_MODEL_PROVENANCE/SOURCE_EVIDENCE/training_source.py",
+      "sha256": "d111ce6d8519c011c6a55768be912c5afd1bc09033845c393cbf9a200baa7850"
+    },
+    {
+      "source": "/home/yqiao19/OpenROAD-flow-scripts/flow/SKY130_200KHZ_CSA_FINAL/MODEL/model_provenance/original_training/splits.json",
+      "copy": "FINAL_ASIC_MODEL_PROVENANCE/SOURCE_EVIDENCE/splits.json",
+      "sha256": "de4e7aca200b3340f76cccd322c056f995fda3a250eb660901285c192afe7ccd"
+    }
+  ],
+  "selection_limitation": "C/codebook selection implementation is validation-only. ASIC exporter explicitly says retrospective r0-primary/r1-comparison selection followed seeing per-split results; prospective test-blind choice of ASIC gate/split/repeat is NOT established. Held-out accuracy must be labeled retrospective/exploratory for this selected frozen instance.",
+  "summary_ambiguity": "summary.json shift_val_acc=94.1176% and global_scale=5e-6 describe generic Shift3; Shift2-specific cache/handoff and independent validation computation give97.3856% and per-group scales. No single global scale replaces16scales."
+}

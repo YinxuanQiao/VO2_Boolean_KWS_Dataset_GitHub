@@ -1,0 +1,11 @@
+Reproducibility hashes from FINAL_ASIC_MODEL_PROVENANCE package
+
+Original train model.npz SHA256: 7bca9b24afe93807a726cb96d1c7a5bffc7c23ad7adf37c6651e1a2c4664f7c3
+Derived Shift2 handoff NPZ SHA256: 3f1c5d9f22d5d4c42e60fada01079cbe0530569469d0dfb1713e2b322465d574
+ROM payload (91x40-bit / 455-byte binary) SHA256: bea1c20eae7b0ac2abb32271b2ac103b9880539ef08c56612973e47d9b72c3ea
+
+The original and handoff NPZ files are not replicated in this Overleaf package.
+The 455-byte ROM payload, 91x40-bit hex, 16 scales and 6 biases are included
+in provenance/ for direct checking of the serialized ROM hash and metadata.
+SHA-256 is a file-integrity identifier; it is not an accuracy metric or
+a replacement for RTL/reference equivalence testing.

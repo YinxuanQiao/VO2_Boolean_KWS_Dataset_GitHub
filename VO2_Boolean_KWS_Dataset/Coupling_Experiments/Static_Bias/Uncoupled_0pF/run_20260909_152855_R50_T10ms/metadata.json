@@ -1,0 +1,16 @@
+{
+  "task": "Task1",
+  "condition": "uncoupled",
+  "cc_pf": 0.0,
+  "capture_ms": 10,
+  "capture_cycles": 1000000,
+  "sample_rate_hz": 100000000,
+  "repeats_requested": 50,
+  "dac_a_requested_v": 0.8,
+  "settle_ms": 100,
+  "plot_us": 100.0,
+  "serial_port": "COM3",
+  "serial_baud": 115200,
+  "note": "",
+  "timestamp": "20260909_152855"
+}
